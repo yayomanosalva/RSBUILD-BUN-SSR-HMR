@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
+    "allowJs": true,
+
+
+    /* modules */
+    "module": "ESNext",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+
+    /* type checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Bundler mode
+    "verbatimModuleSyntax": true,
+
+    // new features
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/app/*": ["./src/app/*"],
+      "@/styles/*": ["src/shared/styles/*"],
+      "@/components/*": ["./src/shared/components/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "~/*": ["./styles/*"]
+    },
+    "types": ["bun-types"]
+  },
+  "include": ["**/*.ts","**/*.tsx", "src/entry-client.js"]
+}
